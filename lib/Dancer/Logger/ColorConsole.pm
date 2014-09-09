@@ -5,7 +5,7 @@ use base 'Dancer::Logger::Abstract';
 use Dancer::Config 'setting';
 use Term::ANSIColor;
 
-our $VERSION = '0.0004';
+our $VERSION = '0.0005';
 
 sub _log {
     my ($self, $level, $message) = @_;
@@ -24,6 +24,7 @@ sub init {
     $self->{level_colors}{debug} ||= 'bright_blue';
     $self->{level_colors}{warn}  ||= $self->{level_colors}{warning} || 'bright_yellow';
     $self->{level_colors}{error} ||= 'bright_red';
+    $self->{level_colors}{info}  ||= 'bright_green';
 
     if (!exists($config->{default_regexps}) || $config->{default_regexps} != 0) {
         push @{$self->{regexps}} =>

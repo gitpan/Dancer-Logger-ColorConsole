@@ -4,7 +4,7 @@
       "Alberto Simoes <ambs@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.64, CPAN::Meta::Converter version 2.130880",
+   "generated_by" : "ExtUtils::MakeMaker version 6.98, CPAN::Meta::Converter version 2.142060",
    "license" : [
       "perl_5"
    ],
@@ -39,5 +39,11 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.0004"
+   "resources" : {
+      "repository" : {
+         "type" : "git",
+         "web" : "https://github.com/ambs/Dancer-Logger-ColorConsole"
+      }
+   },
+   "version" : "0.0005"
 }
